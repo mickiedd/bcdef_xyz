@@ -44,7 +44,7 @@ def upload_file():
             c = DogBreedClassifier()
             pred = c.predict("." + file_url)
             
-            return html + '<label>' +  pred + '</label><br><img src=' + file_url + '>'
+            return dog_breed_html + '<label>' +  pred + '</label><br><img src=' + file_url + '>'
     return dog_breed_html
 
 @app.route('/')
