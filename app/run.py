@@ -1,7 +1,7 @@
 import os
 from flask import Flask, request, url_for, send_from_directory
 from werkzeug import secure_filename
-from classifier import DogBreedClassifier
+from dog_breed/classifier import DogBreedClassifier
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = '{}/uploads'.format(os.getcwd())
