@@ -8,7 +8,7 @@ import cv2
 import matplotlib.pyplot as plt
 from keras.preprocessing import image                  
 from tqdm import tqdm
-from extract_bottleneck_features import extract_InceptionV3
+from dog_breed.extract_bottleneck_features import extract_InceptionV3
 
 class DogBreedClassifier(object):
     def __init__(self):
